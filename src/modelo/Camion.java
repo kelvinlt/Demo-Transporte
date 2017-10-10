@@ -17,9 +17,9 @@ public class Camion extends VehiculoCarga{
     
     @Override
     public double calcularAlquiler(int dias) {
-        double base = 50 * dias;
-        double carga = 50 * getPma();
-        return base + carga + 40;
+            double base = 50 * dias;
+            double carga = 50 * getPma();
+            return base + carga + 40;
     }
     
 }
