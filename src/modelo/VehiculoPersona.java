@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import excepciones.ExceptionTransporte;
+
 /**
  *
  * @author DAM
@@ -13,7 +15,7 @@ public abstract class VehiculoPersona extends Vehiculo{
     
     private int plazas;
 
-    public VehiculoPersona(int plazas, String matricula) {
+    public VehiculoPersona(int plazas, String matricula) throws ExceptionTransporte {
         super(matricula);
         this.plazas = plazas;
     }

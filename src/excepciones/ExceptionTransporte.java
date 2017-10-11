@@ -10,5 +10,7 @@ package excepciones;
  * @author DAM
  */
 public class ExceptionTransporte extends Exception{
+    public ExceptionTransporte(String message){
     
+    }
 }

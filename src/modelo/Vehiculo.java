@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import excepciones.ExceptionTransporte;
+
 /**
  *
  * @author DAM
@@ -13,8 +15,13 @@ public abstract class Vehiculo {
     
     private String matricula;
 
-    public Vehiculo(String matricula) {
-        this.matricula = matricula;
+    public Vehiculo(String matricula) throws ExceptionTransporte {
+        if(matricula.length() == 7){
+            this.matricula = matricula;
+        } else{
+            throw new ExceptionTransporte("ERROR: Matricula incorrecta");
+        }
+        
     }
 
     public String getMatricula() {

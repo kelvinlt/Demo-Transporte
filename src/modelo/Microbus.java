@@ -5,13 +5,15 @@
  */
 package modelo;
 
+import excepciones.ExceptionTransporte;
+
 /**
  *
  * @author DAM
  */
 public class Microbus extends VehiculoPersona{
 
-    public Microbus(int plazas, String matricula) {
+    public Microbus(int plazas, String matricula) throws ExceptionTransporte {
         super(plazas, matricula);
     }
 

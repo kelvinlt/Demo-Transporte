@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import excepciones.ExceptionTransporte;
+
 /**
  *
  * @author DAM
@@ -13,7 +15,7 @@ public class Furgoneta extends VehiculoCarga{
     
     private boolean refrigeracion;
 
-    public Furgoneta(boolean refrigeracion, int pma, String matricula) {
+    public Furgoneta(boolean refrigeracion, int pma, String matricula) throws ExceptionTransporte {
         super(pma, matricula);
         this.refrigeracion = refrigeracion;
     }
